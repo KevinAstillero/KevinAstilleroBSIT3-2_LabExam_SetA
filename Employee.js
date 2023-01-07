@@ -1,9 +1,9 @@
 const fs = require ('fs')
-const Employee = function (note){
+const employee = function (note){
     let newNote = JSON.parse(note)
-    const EmployeeLists = newNote.map(function(n, idx){
-        return n.Employee
+    const employeeLists = newNote.map(function(n, idx){
+        return n.employee
     })
-    console.log (EmployeeLists)
+    console.log ("Employee: " + employeeLists)
 }
-module.exports = Employee
+module.exports = employee

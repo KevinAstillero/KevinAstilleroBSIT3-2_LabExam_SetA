@@ -4,4 +4,3 @@ const present = function (note){
     console.log (newNote)
 
 }
-module.exports = present

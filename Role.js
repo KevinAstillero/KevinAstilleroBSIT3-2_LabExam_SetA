@@ -1,9 +1,9 @@
 const fs = require ('fs')
-const Role = function (note){
+const role = function (note){
     let newNote = JSON.parse(note)
-    const RoleLists = newNote.map(function(n, idx){
-        return n.Role
+    const roleLists = newNote.map(function(n, idx){
+        return n.role
     })
-    console.log (RoleLists)
+    console.log ("Role: " + roleLists)
 }
-module.exports = Role
+module.exports = role

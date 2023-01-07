@@ -1,9 +1,9 @@
 const fs = require ('fs')
-const Department = function (note){
+const department = function (note){
     let newNote = JSON.parse(note)
-    const DepartmentLists = newNote.map(function(n, idx){
-        return n.Department
+    const departmentLists = newNote.map(function(n, idx){
+        return n.department
     })
-    console.log (DepartmentLists)
+    console.log ("Department: " + departmentLists)
 }
-module.exports = Department
+module.exports = department
